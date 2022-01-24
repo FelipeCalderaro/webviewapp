@@ -9,8 +9,11 @@ import 'package:webviewapp/ui/bar_code_reader.dart';
 
 class WebviewPage extends StatefulWidget {
   final String initialUrl;
+  final String title;
+
   WebviewPage({
     this.initialUrl = BASE_URL,
+    required this.title,
   });
   @override
   State<WebviewPage> createState() => _WebviewPageState();
@@ -44,9 +47,9 @@ class _WebviewPageState extends State<WebviewPage> {
             appBar: AppBar(
               backgroundColor: const Color(0xfffed605),
               centerTitle: true,
-              title: const Text(
-                'Empório Express',
-                style: TextStyle(
+              title: Text(
+                widget.title,
+                style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
