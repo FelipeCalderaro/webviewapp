@@ -74,7 +74,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/felip
 		ADDED from /home/felipe/Desktop/felipe/programming/flutter/webviewapp/android/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
 		ADDED from /home/felipe/Desktop/felipe/programming/flutter/webviewapp/android/app/src/main/AndroidManifest.xml:7:9-43
-activity#com.example.webviewapp.MainActivity
+activity#com.emporium.express.MainActivity
 ADDED from /home/felipe/Desktop/felipe/programming/flutter/webviewapp/android/app/src/main/AndroidManifest.xml:8:9-36:20
 	android:launchMode
 		ADDED from /home/felipe/Desktop/felipe/programming/flutter/webviewapp/android/app/src/main/AndroidManifest.xml:10:13-43

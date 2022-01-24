@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.example.webviewapp",
+  "applicationId": "com.emporium.express",
   "variantName": "processDebugResources",
   "elements": [
     {

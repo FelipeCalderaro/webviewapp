@@ -8,6 +8,10 @@ import 'package:webviewapp/core/values.dart';
 import 'package:webviewapp/ui/bar_code_reader.dart';
 
 class WebviewPage extends StatefulWidget {
+  final String initialUrl;
+  WebviewPage({
+    this.initialUrl = BASE_URL,
+  });
   @override
   State<WebviewPage> createState() => _WebviewPageState();
 }
@@ -50,9 +54,9 @@ class _WebviewPageState extends State<WebviewPage> {
             ),
             body: WebView(
               javascriptMode: JavascriptMode.unrestricted,
-              initialUrl: BASE_URL,
+              initialUrl: widget.initialUrl,
               navigationDelegate: (navigation) {
-                if (navigation.url.contains(BASE_URL)) {
+                if (navigation.url.contains(widget.initialUrl)) {
                   return NavigationDecision.navigate;
                 } else {
                   return NavigationDecision.prevent;
@@ -62,14 +66,16 @@ class _WebviewPageState extends State<WebviewPage> {
                 setState(() => _webViewController = controller);
               },
             ),
-            floatingActionButton: FloatingActionButton(
-              backgroundColor: const Color(0xfffed605),
-              child: const Icon(
-                Icons.qr_code_scanner,
-                color: Colors.black,
-              ),
-              onPressed: () => scan(context),
-            ),
+            floatingActionButton: widget.initialUrl == BASE_URL
+                ? FloatingActionButton(
+                    backgroundColor: const Color(0xfffed605),
+                    child: const Icon(
+                      Icons.qr_code_scanner,
+                      color: Colors.black,
+                    ),
+                    onPressed: () => scan(context),
+                  )
+                : Container(),
           ),
           noInternet: () => const Scaffold(
             body: Center(

@@ -1,1 +1,1 @@
-const String BASE_URL = "https://empexpress.com.br/";
+const String BASE_URL = "https://empexpress.com.br";

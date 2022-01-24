@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:webviewapp/core/cubit/products_cubit.dart';
+import 'package:webviewapp/ui/home_page.dart';
 import 'package:webviewapp/ui/webview_page.dart';
 
 void main() {
@@ -23,11 +24,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Empório Express',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WebviewPage(),
+      home: const HomePage(),
     );
   }
 }
