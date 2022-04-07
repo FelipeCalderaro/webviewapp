@@ -82,8 +82,11 @@ class HomePage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   primary: const Color(0xfffed605),
                 ),
-                onPressed: () =>
-                    confirmDialog(BASE_URL, "Sítio dos Rosarinhos", context),
+                onPressed: () => confirmDialog(
+                  BASE_URL,
+                  "Sítio dos Rosarinhos",
+                  context,
+                ),
                 child: const Text(
                   "Sítio dos Rosarinhos",
                   style: TextStyle(
@@ -101,9 +104,33 @@ class HomePage extends StatelessWidget {
                   primary: const Color(0xfffed605),
                 ),
                 onPressed: () => confirmDialog(
-                    "$BASE_URL/varanda", "Varanda Paiva", context),
+                  "$BASE_URL/varanda",
+                  "Varanda Paiva",
+                  context,
+                ),
                 child: const Text(
                   "Varanda Paiva",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(height: 8),
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.85,
+              height: 40,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: const Color(0xfffed605),
+                ),
+                onPressed: () => confirmDialog(
+                  "$BASE_URL/viacapibaribe/",
+                  "Via Capibaribe",
+                  context,
+                ),
+                child: const Text(
+                  "Via Capibaribe",
                   style: TextStyle(
                     color: Colors.black,
                   ),
