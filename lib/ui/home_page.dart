@@ -84,11 +84,11 @@ class HomePage extends StatelessWidget {
                 ),
                 onPressed: () => confirmDialog(
                   BASE_URL,
-                  "Sítio dos Rosarinhos",
+                  "Home Club Sítios Rosarinho e Roseiras",
                   context,
                 ),
                 child: const Text(
-                  "Sítio dos Rosarinhos",
+                  "Home Club Sítios Rosarinho e Roseiras",
                   style: TextStyle(
                     color: Colors.black,
                   ),
