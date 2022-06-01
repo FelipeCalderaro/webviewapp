@@ -127,7 +127,7 @@ class _$_Loading with DiagnosticableTreeMixin implements _Loading {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'ProductsState.loading'));
+    properties.add(DiagnosticsProperty('type', 'ProductsState.loading'));
   }
 
   @override
@@ -241,7 +241,7 @@ class _$_Loaded with DiagnosticableTreeMixin implements _Loaded {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'ProductsState.loaded'));
+    properties.add(DiagnosticsProperty('type', 'ProductsState.loaded'));
   }
 
   @override
@@ -357,7 +357,7 @@ class _$_NoInternet with DiagnosticableTreeMixin implements _NoInternet {
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
-    properties..add(DiagnosticsProperty('type', 'ProductsState.noInternet'));
+    properties.add(DiagnosticsProperty('type', 'ProductsState.noInternet'));
   }
 
   @override

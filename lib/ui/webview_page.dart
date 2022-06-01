@@ -11,7 +11,7 @@ class WebviewPage extends StatefulWidget {
   final String initialUrl;
   final String title;
 
-  WebviewPage({
+  const WebviewPage({
     this.initialUrl = BASE_URL,
     required this.title,
   });
